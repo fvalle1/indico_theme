@@ -1,0 +1,612 @@
+/* Modern Scientific Conference Theme - Inspired by UniTo Design */
+/* Color Palette: Professional Blues with Clean Whites */
+
+:root {
+    --primary-blue: #0066cc;
+    --dark-blue: #003d7a;
+    --light-blue: #4d94ff;
+    --accent-blue: #0052a3;
+    --vibrant-blue: #1e90ff;
+    --teal: #20c997;
+    --purple: #6f42c1;
+    --orange: #fd7e14;
+    --pink: #e83e8c;
+    --text-dark: #2c3e50;
+    --text-light: #5a6c7d;
+    --background-light: #f8f9fa;
+    --background-gradient: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);;
+    --white: #ffffff;
+    --border-color: #e1e8ed;
+    --success-green: #28a745;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --shadow-hover: rgba(0, 0, 0, 0.15);
+}
+
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Layout - Sidebar and Content */
+.conf_leftMenu {
+    float: right;
+    width: 200px;
+}
+
+.confBodyBox {
+    margin-left: 0;
+    margin-right: 230px;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);;
+    box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+    border-bottom: none;
+}
+
+.header .toolbar {
+    background-color: transparent;
+}
+
+.event-title {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    font-size: 2.2em;
+    color: var(--white) !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Menu */
+.menu-bar,
+.ui-widget.ui-tabs {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow);
+    border: 1px solid var(--border-color);
+    margin-top: 1.5rem;
+}
+
+.menu-bar .toolbar {
+    padding: 0.5rem 1rem;
+}
+
+.ui-tabs .ui-tabs-nav {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    border: none;
+    margin-right: 0.5rem;
+    border-radius: 6px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.ui-tabs .ui-tabs-nav li:hover a {
+    background-color: var(--background-light);
+    color: var(--primary-blue);
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-active a {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    box-shadow: 0 2px 6px rgba(0, 102, 204, 0.3);
+}
+
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-active a {
+    color: var(--white) !important;
+}
+
+.ui.info.message, .ui.info.message .header {
+  color: var(--white) !important;
+}
+
+.label {
+    color: var(--white) !important;
+}
+
+/* Content Areas */
+.main-content,
+.event-page {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--shadow);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+/* Buttons */
+.i-button,
+.action-button,
+button[type="submit"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9em;
+}
+
+.i-button:hover,
+.action-button:hover,
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+
+.i-button.text-color,
+.i-button.accept {
+    background: linear-gradient(135deg, var(--teal) 0%, var(--success-green) 100%);
+    box-shadow: 0 4px 15px rgba(32, 201, 151, 0.4);
+}
+
+.i-button.danger {
+    background: linear-gradient(135deg, #ff6b6b 0%, #dc3545 100%);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.4);
+}
+
+/* Registration Forms */
+.regform-section {
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 4px var(--shadow);
+}
+
+.regform-section-title {
+    color: var(--dark-blue);
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary-blue);
+}
+
+.form-field input[type="text"],
+.form-field input[type="email"],
+.form-field textarea,
+.form-field select {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+    background-color: var(--white);
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+    outline: none;
+}
+
+/* Timetable */
+.timetable {
+    background-color: var(--white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+.timetable .day-header {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+    color: var(--white);
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.timetable .session {
+    border-left: 4px solid var(--primary-blue);
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: var(--background-light);
+    border-radius: 0 6px 6px 0;
+    transition: all 0.3s ease;
+}
+
+.timetable .session:hover {
+    box-shadow: 0 4px 12px var(--shadow);
+    transform: translateX(4px);
+}
+
+.timetable .session-title {
+    color: var(--dark-blue);
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.timetableBlock {
+    height: auto !important;
+    width: 88% !important;
+}
+
+.timetableBlock .entry-content {
+    height: auto !important;
+}
+
+
+/* Cards and Boxes */
+.info-box,
+.message-box {
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    background-color: var(--white);
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+.info-box.highlight {
+    border-left: 4px solid var(--primary-blue);
+    background-color: rgba(0, 102, 204, 0.05);
+}
+
+/* Links */
+a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-blue);
+    text-decoration: underline;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    letter-spacing: -0.3px;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.875rem;
+}
+
+h3, h4, h5, h6 {
+    color: var(--dark-blue);
+}
+
+/* Override Indico default heading styling */
+.conference-page header h1,
+.conference-page header h2,
+.conference-page header h3,
+.conference-page .page-content h1,
+.conference-page .page-content h2,
+.conference-page .page-content h3{
+    color: var(--dark-blue) !important;
+    padding-right: 5px;
+}
+
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 0.75rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 4px solid var(--primary-blue);
+}
+
+.footer a {
+    color: var(--light-blue);
+}
+
+.footer a:hover {
+    color: var(--white);
+}
+
+/* Tables */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px var(--shadow);
+}
+
+table thead {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 100%);
+    color: var(--white);
+}
+
+table th {
+    padding: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+table td {
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr {
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: var(--background-light);
+}
+
+/* Badges and Tags */
+.badge,
+.label {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875em;
+    font-weight: 500;
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 1.6em;
+    }
+    
+    .main-content,
+    .event-page {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    
+    .ui-tabs .ui-tabs-nav li a {
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* --- Fix Indico Abstracts Header + Search Bar --- */
+
+/* Adjust section header container */
+section > .header {
+    background: var(--white);
+    box-shadow: 0 2px 6px var(--shadow);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Header row: title + toolbar side by side */
+.header-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+/* Target only the "Conveners" h3 inside session-conveners */
+.session-conveners > .header > .header-row > h3 {
+    color: var(--white) !important;
+}
+
+
+/* Fix header title alignment */
+.header-row h3 {
+    color: var(--white) !important;
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: var(--white);
+}
+
+/* Toolbar layout */
+.header-row .toolbar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: transparent;
+}
+
+/* Groups inside toolbar (each block of icons/input) */
+.header-row .toolbar .group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Filter and search icons */
+.i-button.label.icon-search,
+.i-button.label.icon-list {
+    background: var(--primary-blue);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}
+
+/* Force clock/time icon blue */
+i.icon-time.header-data::before,
+i.icon-calendar.header-data::before {
+    color: var(--primary-blue) !important;
+}
+
+td > a.attachment.icon-file-pdf::before {
+    color: var(--white) !important; /* blue */
+}
+
+.tree tr > td:first-child > a.icon-file-pdf:hover:not(.disabled):not(:disabled)::before {
+    color: var(--primary-blue) !important; /* blue */
+}
+
+
+/* Search input box */
+.clearableinput input[type="text"] {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 0.45rem 0.75rem;
+    font-size: 0.9em;
+    min-width: 220px;
+    transition: all 0.2s ease;
+}
+
+.clearableinput input[type="text"]:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.15);
+    outline: none;
+}
+
+/* Clear button */
+.clearableinput .button-box a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    color: var(--text-light);
+    transition: color 0.2s;
+}
+
+.clearableinput .button-box a:hover {
+    color: var(--danger);
+}
+
+/* PDF button consistency */
+.icon-file-pdf {
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+    color: #fff;
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(220, 53, 69, 0.3);
+}
+
+.icon-file-pdf:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.4);
+}
+
+/* Make sure the inner “group” for filter and search line up */
+#filter-statistics {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Fix responsiveness */
+@media (max-width: 768px) {
+    .header-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-row .toolbar {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .clearableinput input[type="text"] {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+/* --- Fix message box colors --- */
+
+/* Limit the white text to the main site header only */
+body > .header,
+.conference-page > .header {
+    color: var(--white);
+}
+
+.ui.list .item .header {
+    color: var(--white) !important;
+}
+
+
+/* Restore default text colors inside info / warning / etc. message boxes */
+.ui.message,
+.ui.info.message,
+.ui.warning.message,
+.ui.error.message {
+    background-color: var(--white);
+    border-left: 4px solid var(--primary-blue);
+    color: var(--text-dark);
+}
+
+/* Header inside message (e.g. "Participant list") in white background with blue bar */
+.ui.message .header {
+    background: var(--primary-blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px 6px 0 0;
+    margin: -1rem -1rem 1rem -1rem; /* pull it to full width of the message box */
+}
+
+/* Paragraph text in black/dark color */
+.ui.message p {
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Dropdown / form field styling inside message */
+.ui.message .ui.form .field,
+.ui.message ind-select {
+    color: var(--text-dark);
+}
+
+a, a:hover, a:focus {
+    color: var(--primary-blue);
+}
+
+/* Default state (blue) */
+td > a.attachment.icon-file-pdf > span{
+    color: var(--white);
+    text-decoration: none;
+}
+
+/* Hover state (gray) */
+td > a.attachment.icon-file-pdf:hover> span {
+    color: var(--primary-blue);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
