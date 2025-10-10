@@ -610,3 +610,7 @@ td > a.attachment.icon-file-pdf:hover> span {
     text-decoration: underline;
     transition: color 0.2s ease;
 }
+
+.balloon-qtip .title-container .title {
+    color: var(--primary-blue) !important;
+}
