@@ -240,7 +240,6 @@ button[type="submit"]:hover {
 }
 
 .timetableBlock {
-    height: auto !important;
     width: 88% !important;
 }
 
@@ -613,4 +612,8 @@ td > a.attachment.icon-file-pdf:hover> span {
 
 .balloon-qtip .title-container .title {
     color: var(--primary-blue) !important;
+}
+
+.confLogo {
+    width: 95%;
 }
