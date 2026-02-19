@@ -5,8 +5,8 @@
     --primary-blue: #0066cc;
     --dark-blue: #003d7a;
     --light-blue: #4d94ff;
-    --accent-blue: #0052a3;
-    --vibrant-blue: #1e90ff;
+    --accent-blue: #0066cc;
+    --vibrant-blue: #4d94ff;
     --teal: #20c997;
     --purple: #6f42c1;
     --orange: #fd7e14;
@@ -616,4 +616,24 @@ td > a.attachment.icon-file-pdf:hover> span {
 
 .confLogo {
     width: 95%;
+}
+
+/* Don't underline the conference title link (logo + title) */
+.confTitle h1 > a,
+.confTitle h1 > a:hover,
+.confTitle h1 > a:focus {
+  text-decoration: none !important;
+}
+
+.confTitle .date {
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: var(--dark-blue);
+    margin-bottom: 1rem;
+}
+
+
+.ui.warning.message .header {
+    color: var(--white) !important;
 }
